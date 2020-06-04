@@ -1,0 +1,19 @@
+[0m[[0m[0minfo[0m] [0m[0mFast optimizing /Users/jvphan/Documents/labs/scala_js_webapp/target/scala-2.13/scala_js_webapp-test-fastopt.js[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: Compute reachability: 79330 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: Assemble LinkedClasses: 13083 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: Check IR: 155892 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: 273933 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Batch mode: false[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Incremental part: 41314 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Optimizing 295 methods.[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Optimizer part: 38689 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: 86239 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: Compute reachability: 47171 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: Assemble LinkedClasses: 2273 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: 54704 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Generate classes: 53991 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Write trees: 727 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Class tree cache stats: reused: 1746 -- invalidated: 2[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Method tree cache stats: reused: 4098 -- invalidated: 199[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: 65591 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mBasicBackend: Write result: 242199 us[0m
