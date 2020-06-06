@@ -7,7 +7,8 @@ import org.scalajs.dom.html.Canvas
 
 object TutorialApp {
   val cellCountPerRow = 200
-  val cellSizeInPixels = 2
+  val cellSizeInPixels = 3
+  val canvasLength = cellCountPerRow * cellSizeInPixels
   var x = 0
   var y = 0
   var lineColor = "#000000"
@@ -16,7 +17,6 @@ object TutorialApp {
 
   def main(args: Array[String]): Unit =  {
     getCanvas(document.body)
-//    dom.window.setInterval(increaseSize _, 1000)
   }
 
   def pointer(canvas: Canvas): Unit = {
@@ -25,25 +25,17 @@ object TutorialApp {
     ctx.fillRect(x, y, pointerSize, pointerSize)
   }
 
-//  def increaseSize (): Unit = {
-//    time += 1
-//
-//    if (time % 10 == 0) {
-//      pointerSize += 1
-//    }
-//  }
-
   def getCanvas(targetNode: dom.Node): Unit = {
     val simulationCanvas = document.createElement("canvas")
     simulationCanvas.id = "simulation-canvas"
-    simulationCanvas.setAttribute("width", cellCountPerRow * cellSizeInPixels + "px")
-    simulationCanvas.setAttribute("height", cellCountPerRow * cellSizeInPixels +"px")
+    simulationCanvas.setAttribute("width", canvasLength + "px")
+    simulationCanvas.setAttribute("height", canvasLength +"px")
     targetNode.appendChild(simulationCanvas)
 
     val canvas = document.getElementById("simulation-canvas").asInstanceOf[html.Canvas]
     val ctx = canvas.getContext("2d").asInstanceOf[CanvasRenderingContext2D]
     ctx.fillStyle = "grey"
-    ctx.fillRect(0, 0, cellCountPerRow * cellSizeInPixels, cellCountPerRow * cellSizeInPixels)
+    ctx.fillRect(0, 0, canvasLength, canvasLength)
 
     pointer(canvas)
     draw(canvas)
@@ -55,31 +47,28 @@ object TutorialApp {
       (e: dom.KeyboardEvent) => {
         e.keyCode match {
           case KeyCode.S => {
-            if (y < cellCountPerRow * cellSizeInPixels - pointerSize) {
-              y += pointerSize
-            }
+            if (canvasLength - y >= pointerSize) y += pointerSize
+            else y = (canvasLength - pointerSize)
+            println(y)
             down = true
           }
           case KeyCode.W => {
-            if (y > 0) y -= pointerSize
+            if (y >= pointerSize) y -= pointerSize
+            else y = 0
             down = true
           }
           case KeyCode.D => {
-            if (x < cellCountPerRow * cellSizeInPixels - pointerSize) x += pointerSize
+            if (canvasLength - x > pointerSize) x += pointerSize
+            else x = (canvasLength - pointerSize)
             down = true
           }
           case KeyCode.A => {
-            if (x > 0) x -= pointerSize
+            if (x >= pointerSize) x -= pointerSize
+            else x = 0
             down = true
           }
           case KeyCode.Space => {
             lineColor = "#%06x".format(scala.util.Random.nextInt(1<<24))
-          }
-          case KeyCode.E => {
-            pointerSize += 1
-          }
-          case KeyCode.Q => {
-            if (pointerSize > cellSizeInPixels) pointerSize -= 1
           }
           case _ => None
         }

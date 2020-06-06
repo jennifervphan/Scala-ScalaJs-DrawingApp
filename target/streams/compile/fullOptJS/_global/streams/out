@@ -1,22 +1,22 @@
 [0m[[0m[0minfo[0m] [0m[0mFull optimizing /Users/jvphan/Documents/labs/scala_js_webapp/target/scala-2.13/scala_js_webapp-opt.js[0m
-[0m[[0m[0mdebug[0m] [0m[0mLinker: Compute reachability: 24941 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mLinker: Assemble LinkedClasses: 5974 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mLinker: Check IR: 38126 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mLinker: 105172 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: Compute reachability: 108369 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: Assemble LinkedClasses: 17034 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: Check IR: 148342 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: 305257 us[0m
 [0m[[0m[0mdebug[0m] [0m[0mOptimizer: Batch mode: false[0m
-[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Incremental part: 5109 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Optimizing 66 methods.[0m
-[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Optimizer part: 6659 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mOptimizer: 13811 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mRefiner: Compute reachability: 8366 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mRefiner: Assemble LinkedClasses: 1054 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mRefiner: 10679 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mEmitter: Generate classes: 12899 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mEmitter: Write trees: 228 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mEmitter: Class tree cache stats: reused: 560 -- invalidated: 2[0m
-[0m[[0m[0mdebug[0m] [0m[0mEmitter: Method tree cache stats: reused: 947 -- invalidated: 39[0m
-[0m[[0m[0mdebug[0m] [0m[0mEmitter: 15472 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mClosure: Create trees): 18583 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Incremental part: 27447 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Optimizing 120 methods.[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Optimizer part: 16458 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: 46939 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: Compute reachability: 17860 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: Assemble LinkedClasses: 1397 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: 21513 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Generate classes: 42320 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Write trees: 805 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Class tree cache stats: reused: 571 -- invalidated: 13[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Method tree cache stats: reused: 931 -- invalidated: 75[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: 49691 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mClosure: Create trees): 45558 us[0m
 [0m[[0m[0minfo[0m] [0m[0mClosure: 0 error(s), 0 warning(s)[0m
-[0m[[0m[0mdebug[0m] [0m[0mClosure: Compiler pass: 1261593 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mClosure: Write result: 27029 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mClosure: Compiler pass: 2028096 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mClosure: Write result: 38033 us[0m
